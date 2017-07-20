@@ -1,0 +1,8 @@
+{
+    "name": "mapado/mapado-plugin",
+    "description": "Mapado Wordrpress plugin",
+    "license": "proprietary",
+    "require": {
+        "mapado/php-sdk": "^0.14.0"
+    }
+}

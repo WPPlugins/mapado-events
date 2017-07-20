@@ -1,0 +1,22 @@
+{
+    "name": "mapado/php-sdk",
+    "description": "PHP SDK for Mapado API",
+    "require": {
+        "guzzlehttp/guzzle": "5.1.0"
+    },
+    "require-dev": {
+        "raulfraile/ladybug": "^1.0",
+        "atoum/atoum": "^2.6.0",
+        "symfony/yaml": "^2.8"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": { "Mapado\\Sdk\\": "src/" }
+    },
+    "authors": [
+        {
+            "name": "Julien Deniau",
+            "email": "julien.deniau@gmail.com"
+        }
+    ]
+}

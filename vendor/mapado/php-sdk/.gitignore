@@ -1,0 +1,12 @@
+# Managed by Composer
+/bin/*
+!bin/console
+!bin/symfony_requirements
+/vendor/
+
+# Composer PHAR
+/composer.phar
+
+# Mapado specifics
+test.php
+src/Tests/parameters.yml

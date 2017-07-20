@@ -1,0 +1,315 @@
+/**
+ * Mapado plugin stylesheets
+ */
+
+
+/**
+ * Reset
+ */
+#mapado_list {
+    box-sizing: border-box;
+}
+
+#mapado_list * {
+    box-sizing: inherit;
+}
+
+#mapado-plugin p {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+/**
+* Search bar
+*/
+
+#mapado-plugin .mpd-search-bar {
+    margin: 0.5em;
+    background-color: #F7F7F7;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 10px;
+    font-weight: normal;
+}
+
+#mapado-plugin .mpd-search-bar form {
+    display: table;
+    border-spacing: 5px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#mapado-plugin .mpd-form-group {
+    display: table-cell;
+    vertical-align: top;
+    width: 33%;
+}
+
+#mapado-plugin .mpd-form-group--submit {
+    width: auto;
+}
+
+#mapado-plugin .mpd-form-group input,
+#mapado-plugin .mpd-form-group select,
+#mapado-plugin .mpd-form-group button {
+    box-sizing: border-box;
+    width: 100%;
+    height: 37px;
+    padding: 0 12px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+
+    font-size: 14px;
+    background: white;
+    color: rgba(51, 51, 51, 0.7);
+}
+
+#mapado-plugin .mpd-search-bar button {
+    width: auto;
+    border-color: transparent;
+
+    background-color: #424242;
+    color: white;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+#mapado-plugin .mpd-search-bar:after {
+    content: ' ';
+    display:block;
+    clear: both;
+}
+
+#mapado-plugin .tt-dropdown-menu {
+    padding: 0;
+    border: 2px solid #ccc;
+    border-radius: 0 0 3px 3px;
+    border-top: 0;
+}
+
+#mapado-plugin .tt-suggestion {
+    padding: 4px 12px !important;
+}
+
+#mapado-plugin .tt-suggestion .name {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#mapado-plugin .tt-cursor {
+    color: #424242;
+    background-color: #F7F7F7;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+/**
+ * Card List
+ */
+#mapado-plugin .mpd-card-list__footer {
+    clear: both;
+    overflow: hidden;
+}
+
+
+/**
+ * Card
+ */
+#mapado-plugin .mpd-card__title {
+    margin: 0;
+    padding: 0;
+}
+
+#mapado-plugin .mpd-card__title > a {
+    text-decoration: none;
+}
+
+#mapado-plugin .mpd-card__address {
+    margin-top: 0;
+}
+
+#mapado-plugin .mpd-card__read-more-link {
+    white-space: nowrap;
+}
+
+
+
+/**
+ * Pagination
+ */
+#mapado-plugin .mpd-pagination {
+    margin: 10px auto;
+    display: table;
+}
+
+#mapado-plugin .mpd-pagination__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+
+    background-color: #F7F7F7;
+    background-color: rgba(0, 0, 0, 0.03);
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+}
+
+#mapado-plugin .mpd-pagination__item--current {
+    background-color: #FDFDFD;
+    color: #CCC;
+}
+
+
+/**
+ * Credits
+ */
+#mapado-plugin .mpd-credits {
+    padding: 10px 10px;
+    margin: 15px 0;
+
+    background-color: #F7F7F7;
+    background-color: rgba(0, 0, 0, 0.03);
+    font-size: 10px;
+    text-align: center;
+}
+
+/**
+ * Link back home
+ */
+#mapado-plugin .link-back-home {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    margin: 15px 0;
+
+    background-color: #F7F7F7;
+    background-color: rgba(0, 0, 0, 0.03);
+    font-size: 10px;
+    text-align: center;
+}
+
+/**
+ * Google Maps
+ */
+#mapado-plugin .mpd-google-maps {
+    height: 300px;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+}
+
+#mapado-map-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+/**
+ * Single activity
+ */
+.mapado_activity_single {
+    width: 100%;
+}
+
+.mapado_activity_single .mapado_activity_thumb,
+.mapado_activity_single .mapado_activity_thumb img {
+    width: 100%;
+}
+
+.mapado_activity_single .mapado_activity_infos {
+    padding: 3% 5%;
+    background-color: #F7F7F7;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+.mapado_activity_single .mapado_activity_infos > div {
+    margin: 2% 0;
+}
+.mapado_activity_single .mapado_activity_label,
+.mapado_activity_single .mapado_activity_value {
+    display: inline-block;
+    vertical-align: top;
+    width: 78%;
+}
+.mapado_activity_single .mapado_activity_label {
+    width: 20%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mapado_activity_single .mapado_activity_desc {
+    margin-top: 1.5em;
+}
+
+.mapado_activity_single .mapado_activity_buy {
+  display: inline-block;
+}
+
+.mapado_activity_single .mapado_activity_buy a {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+.mapado_activity_single .mapado_activity_price {
+  display: inline-block;
+}
+
+.mapado_activity_single .mapado_activity_link_official {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.mapado_activity_single .mapado_activity_email {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.mapado_activity_single .mapado_activity_phone {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+/**
+* Search filter
+*/
+#mapado-plugin .twitter-typeahead {
+    width: 100%;
+}
+#mapado-plugin .twitter-typeahead .tt-input, .twitter-typeahead .tt-hint {
+    width: 100%;
+    margin: 0px;
+    padding: 8px 12px;
+    border: 2px solid #ccc;
+    outline: none;
+}
+#mapado-plugin .twitter-typeahead .tt-input:focus {
+    border: 2px solid #0097cf;
+}
+#mapado-plugin .twitter-typeahead .tt-hint {
+    color: #999; }
+#mapado-plugin .twitter-typeahead .tt-dropdown-menu {
+    width: 100%;
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 0px;
+}
+#mapado-plugin .twitter-typeahead .tt-dropdown-menu .tt-suggestion {
+    text-align: left;
+    padding: 3px 20px;
+    font-size: 18px;
+    line-height: 24px;
+}
+#mapado-plugin .twitter-typeahead .tt-dropdown-menu .tt-suggestion.tt-cursor {
+    color: #fff;
+    background-color: #0097cf;
+}
+#mapado-plugin .twitter-typeahead .tt-dropdown-menu .tt-suggestion em {
+    font-weight: bold;
+    font-style: normal;
+}

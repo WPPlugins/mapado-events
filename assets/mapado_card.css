@@ -1,0 +1,228 @@
+/**
+ * Card
+ */
+#mapado-plugin .mpd-card {
+    clear: left;
+    overflow: hidden; /* Create a BFC to prevent float wrapping */
+    background-color: #F7F7F7;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+#mapado-plugin img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Thumb position */
+#mapado-plugin .mpd-card__thumb--right,
+#mapado-plugin .mpd-card__thumb--left {
+    float: left;
+    max-width: none;
+}
+
+#mapado-plugin .mpd-card__thumb--right {
+    float: right;
+}
+
+#mapado-plugin .mpd-card__thumb--top {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Thumb size */
+#mapado-plugin .mpd-card__thumb--s.mpd-card__thumb--right,
+#mapado-plugin .mpd-card__thumb--s.mpd-card__thumb--left {
+    margin: 1.5em 2em;
+}
+
+#mapado-plugin .mpd-card__thumb--s.mpd-card__thumb--left {
+    margin-right: 0;
+}
+
+#mapado-plugin .mpd-card__thumb--s.mpd-card__thumb--right {
+    margin-left: 0;
+}
+
+#mapado-plugin .mpd-card__body {
+    overflow: hidden; /* Create a BFC to prevent float wrapping */
+    padding: 1.5em 2em;
+    font-size: 12px;
+}
+
+/**
+ * Chewing Grid
+ */
+#mapado-plugin .chew-row {
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    letter-spacing: -0.31em;
+    *letter-spacing: normal;
+    *word-spacing: -0.43em;
+    text-rendering: optimizespeed;
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+#mapado-plugin .chew-cell {
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    zoom: 1;
+    letter-spacing: normal;
+    *word-spacing: normal;
+    display: -ms-flex;
+    display: flex;
+    box-sizing: border-box;
+    padding: 0.5em;
+    width: auto;
+    min-width: 600px
+}
+
+#mapado-plugin .chew-cell.chew-cell--ghost {
+    visibility: hidden;
+    height: 0;
+    padding: 0
+}
+
+#mapado-plugin .chew-card {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    display: block;
+    margin: 0 auto;
+    max-width: none
+}
+
+#mapado-plugin .chew-row--1 > .chew-cell {
+    width: 100%
+}
+
+#mapado-plugin .chew-row--2 > .chew-cell {
+    width: 50%
+}
+
+#mapado-plugin .chew-row--3 > .chew-cell {
+    width: 33.33333%
+}
+
+#mapado-plugin .chew-row--4 > .chew-cell {
+    width: 25%
+}
+
+#mapado-plugin .chew-row--thumb-l > .chew-cell {
+    min-width: 600px
+}
+
+@media (max-width: 2399px) {
+    #mapado-plugin .chew-row--4.chew-row--thumb-l > .chew-cell {
+        width: 33.33333%
+    }
+}
+
+@media (max-width: 1799px) {
+    #mapado-plugin .chew-row--3.chew-row--thumb-l > .chew-cell,
+	#mapado-plugin .chew-row--4.chew-row--thumb-l > .chew-cell {
+        width: 50%
+    }
+}
+
+@media (max-width: 1199px) {
+    #mapado-plugin .chew-row--2.chew-row--thumb-l > .chew-cell,
+	#mapado-plugin .chew-row--3.chew-row--thumb-l > .chew-cell,
+	#mapado-plugin .chew-row--4.chew-row--thumb-l > .chew-cell,
+	#mapado-plugin .chew-row--thumb-l > .chew-cell {
+        width: 100%;
+        display: block;
+        min-width: 0
+    }
+}
+
+#mapado-plugin .chew-row--thumb-m > .chew-cell {
+    min-width: 525px
+}
+
+@media (max-width: 2099px) {
+    #mapado-plugin .chew-row--4.chew-row--thumb-m > .chew-cell {
+        width: 33.33333%
+    }
+}
+
+@media (max-width: 1574px) {
+    #mapado-plugin .chew-row--3.chew-row--thumb-m > .chew-cell,
+	#mapado-plugin .chew-row--4.chew-row--thumb-m > .chew-cell {
+        width: 50%
+    }
+}
+
+@media (max-width: 1049px) {
+    #mapado-plugin .chew-row--2.chew-row--thumb-m > .chew-cell,
+	#mapado-plugin .chew-row--3.chew-row--thumb-m > .chew-cell,
+	#mapado-plugin .chew-row--4.chew-row--thumb-m > .chew-cell,
+	#mapado-plugin .chew-row--thumb-m > .chew-cell {
+        width: 100%;
+        display: block;
+        min-width: 0
+    }
+}
+
+#mapado-plugin .chew-row--thumb-s > .chew-cell {
+    min-width: 450px
+}
+
+@media (max-width: 1799px) {
+    #mapado-plugin .chew-row--4.chew-row--thumb-s > .chew-cell {
+        width: 33.33333%
+    }
+}
+
+@media (max-width: 1349px) {
+    #mapado-plugin .chew-row--3.chew-row--thumb-s > .chew-cell,
+	#mapado-plugin .chew-row--4.chew-row--thumb-s > .chew-cell {
+        width: 50%
+    }
+}
+
+@media (max-width: 899px) {
+    #mapado-plugin .chew-row--2.chew-row--thumb-s > .chew-cell,
+	#mapado-plugin .chew-row--3.chew-row--thumb-s > .chew-cell,
+	#mapado-plugin .chew-row--4.chew-row--thumb-s > .chew-cell,
+	#mapado-plugin .chew-row--thumb-s > .chew-cell {
+        width: 100%;
+        display: block;
+        min-width: 0
+    }
+}
+
+#mapado-plugin .chew-row--thumb-top > .chew-cell {
+    min-width: 250px
+}
+
+@media (max-width: 999px) {
+    #mapado-plugin .chew-row--4.chew-row--thumb-top > .chew-cell {
+        width: 33.33333%
+    }
+}
+
+@media (max-width: 749px) {
+    #mapado-plugin .chew-row--3.chew-row--thumb-top > .chew-cell,
+	#mapado-plugin .chew-row--4.chew-row--thumb-top > .chew-cell {
+        width: 50%
+    }
+}
+
+@media (max-width: 499px) {
+    #mapado-plugin .chew-row--2.chew-row--thumb-top > .chew-cell,
+	#mapado-plugin .chew-row--3.chew-row--thumb-top > .chew-cell,
+	#mapado-plugin .chew-row--4.chew-row--thumb-top > .chew-cell,
+	#mapado-plugin .chew-row--thumb-top > .chew-cell {
+        width: 100%;
+        display: block;
+        min-width: 0
+    }
+}
+
+
